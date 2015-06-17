@@ -8,5 +8,17 @@ a {
 
 .letra{
 	 color: black;
-	 font: 1em;
+	 font-size: 0.8em;
+}
+.borde{
+	margin-bottom: 2em;
+}
+.blogo{
+	margin-top: -0.2em;
+}
+@media screen (max-width: 500px;) {
+	.letra{
+	 color: black;
+	 font-size: 0.5em;
+	}
 }
