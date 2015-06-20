@@ -138,6 +138,7 @@
 			</div>
 			<br>
 		</section>
+		
 		<section class="container">
 			<div class="row">
 				<blockquote class="col-xs-12 col-sm-6 col-md-3">
@@ -172,7 +173,29 @@
 				</blockquote>
 			</div>
 		</section>
-	     <!--Import jQuery before materialize.js-->
+		
+		<section>
+			<div id="fb-root"></div>
+			<script type="text/javascript">
+			(function() {
+			var element = document.createElement('script'); 
+			element.type = "text/javascript"; 
+			element.async = true;
+			element.id = "facebook-jssdk"
+			element.src = "https://www.facebook.com/supersnatly?ref=hl";
+			var s = document.getElementsByTagName('script')[0]; 
+			s.parentNode.insertBefore(element, s);
+			})();
+			</script>
+
+			<div class="fb-like" data-href="https://www.facebook.com/supersnatly?ref=hl" data-width="292">
+			</div>
+
+			<div class="fb-like" data-href="https://www.facebook.com/supersnatly?ref=hll" data-width="292" data-send="true"></div>
+		</section>
+
+		<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+		
 	    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<script src="./javascripts/particles.js"></script>
