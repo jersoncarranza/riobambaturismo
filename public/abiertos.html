@@ -34,7 +34,7 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Información ciudadana<span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Blog</a></li>
+              <li><a href="./blog">Blog</a></li>
               <li class="active"><a href="./abiertos.html">Datos Abiertos</a></li>
             </ul>
           </li>
@@ -54,11 +54,11 @@
           <div class="col-md-12" ng-controller="TabsController as tabs">
             <ul class="nav nav-tabs nav-justified">
               <li ng-class="{ active:tabs.tab===1}"> <a href="#" ng-click="tabs.selectTab(1)"><img src="./images/salud.png" width="18" height="18" alt=""> Salud</a></li>
-              <li ng-class="{ active:tabs.tab === 2 }"><a href="#" ng-click="tabs.selectTab(2)"><img src="./images/movilidad.png" width="18" height="18" alt="">Movilidad</a></li>
-              <li ng-class="{ active:tabs.tab === 3 }"><a href="#" ng-click="tabs.selectTab(3)"><img src="./images/seguridad.png" width="18" height="18" alt=""> Seguridad</a></li>
-              <li ng-class="{ active:tabs.tab === 4 }"><a href="#" ng-click="tabs.selectTab(4)"><img src="./images/recreacion.png" width="18" height="18" alt=""> Recreación</a></li>
-              <li ng-class="{ active:tabs.tab === 5 }"><a href="#" ng-click="tabs.selectTab(5)"><img src="./images/riesgo.png" width="18" height="18" alt=""> Riesgo</a></li>
-              <li ng-class="{ active:tabs.tab === 6 }"><a href="#" ng-click="tabs.selectTab(6)"><img src="./images/inclusion.png" width="18" height="18" alt="">Inclusión</a></li>
+              <li ng-class="{ active:tabs.tab === 2 }"><a href="#" ng-click="tabs.selectTab(2)"><img src="./images/educacion.png" width="18" height="18" alt="">Educación</a></li>
+              <li ng-class="{ active:tabs.tab === 3 }"><a href="#" ng-click="tabs.selectTab(3)"><img src="./images/recreacion.png" width="18" height="18" alt=""> Recreación</a></li>
+              <li ng-class="{ active:tabs.tab === 4 }"><a href="#" ng-click="tabs.selectTab(4)"><img src="./images/seguridad.png" width="18" height="18" alt=""> Seguridad</a></li>
+              <li ng-class="{ active:tabs.tab === 5 }"><a href="#" ng-click="tabs.selectTab(5)"><img src="./images/turismo.png" width="18" height="18" alt=""> Turismo</a></li>
+              <li ng-class="{ active:tabs.tab === 6 }"><a href="#" ng-click="tabs.selectTab(6)"><img src="./images/infantiles.png" width="18" height="18" alt="">Infantiles</a></li>
             </ul>
             <div class="tab-content">
               <!-- Pokedex -->
@@ -67,23 +67,23 @@
               </div>
               <!-- Stats -->
               <div ng-show="tabs.tab === 2">
-                 <strong>Movilidad</strong> 
+                 <strong>Educación</strong> 
               </div>
               <!-- Seguridad -->
               <div ng-show="tabs.tab === 3">
-             	   <strong>Seguridad</strong>       
+             	   <strong>Recreación</strong>       
                 
               </div>
               <!-- Turismo -->
               <div ng-show="tabs.tab === 4">
-             	   <strong>Recreación</strong>       
+             	   <strong>Seguridad</strong>       
               </div>
               <!-- Turismo -->
               <div ng-show="tabs.tab === 5">
-             	   <strong>Riesgo</strong>       
+             	   <strong>Turismo</strong>       
               </div>
               <div ng-show="tabs.tab === 6">
-                 <strong>Inclusión</strong>       
+                 <strong>Infantiles</strong>       
               </div>
 
             </div>
