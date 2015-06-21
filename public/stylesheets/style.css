@@ -6,7 +6,11 @@
 	position: fixed;
 	background: #fff;
 }	
-
+.line { 
+  background-color: black;
+  height: 10px;
+  width: 100%;
+}
 .barra-color{
 	background-color:#0E73A8;
 	background-image: linear-gradient(#0E73A8, #0E73A8, #0E73A8);

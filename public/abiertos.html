@@ -49,7 +49,7 @@
     </div><!-- /.container-fluid -->
   </nav>
 
-	<section class="container">
+	<section class="">
 		<!-- Tabs -->
           <div class="col-md-12" ng-controller="TabsController as tabs">
             <ul class="nav nav-tabs nav-justified">
@@ -57,70 +57,17 @@
               <li ng-class="{ active:tabs.tab === 2 }"><a href="#" ng-click="tabs.selectTab(2)"><img src="./images/movilidad.png" width="18" height="18" alt="">Movilidad</a></li>
               <li ng-class="{ active:tabs.tab === 3 }"><a href="#" ng-click="tabs.selectTab(3)"><img src="./images/seguridad.png" width="18" height="18" alt=""> Seguridad</a></li>
               <li ng-class="{ active:tabs.tab === 4 }"><a href="#" ng-click="tabs.selectTab(4)"><img src="./images/recreacion.png" width="18" height="18" alt=""> Recreación</a></li>
-              <li ng-class="{ active:tabs.tab === 5 }"><a href="#" ng-click="tabs.selectTab(5)"><img src="./images/seguridad.png" width="18" height="18" alt=""> Seguridad</a></li>
+              <li ng-class="{ active:tabs.tab === 5 }"><a href="#" ng-click="tabs.selectTab(5)"><img src="./images/riesgo.png" width="18" height="18" alt=""> Riesgo</a></li>
+              <li ng-class="{ active:tabs.tab === 6 }"><a href="#" ng-click="tabs.selectTab(6)"><img src="./images/inclusion.png" width="18" height="18" alt="">Inclusión</a></li>
             </ul>
             <div class="tab-content">
               <!-- Pokedex -->
               <div ng-show="tabs.tab === 1">
-                <ul class="list-group">
-                  <li class="list-group-item">
-                    <strong>Type</strong>
-                    <span class="pull-right">
-                      <span class="label type type-{{type | lowercase}}" ng-repeat="type in pkmCtrl.pokemon.type">
-                        {{type}}
-                      </span>
-                    </span>
-                  </li>
-                  <li class="list-group-item">
-                    <strong>Height</strong>
-                    <span class="pull-right">{{pkmCtrl.pokemon.height}}</span>
-                  </li>
-                  <li class="list-group-item">
-                    <strong>Weight</strong>
-                    <span class="pull-right">{{pkmCtrl.pokemon.weight}}</span>
-                  </li>
-                  <li class="list-group-item">
-                    <strong>Abilities</strong>
-                    <ul>
-                      <li ng-repeat="ability in pkmCtrl.pokemon.abilities">
-                        {{ability}}
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
+                 <strong>Salud</strong> 
               </div>
               <!-- Stats -->
               <div ng-show="tabs.tab === 2">
-                <ul class="list-group">
-                  <li class="list-group-item">
-                    <strong>HP</strong>
-                    <span class="badge">{{pkmCtrl.pokemon.stats.hp}}</span>
-                  </li>
-                  <li class="list-group-item">
-                    <strong>Attack</strong>
-                    <span class="badge">{{pkmCtrl.pokemon.stats.attack}}</span>
-                  </li>
-                  <li class="list-group-item">
-                    <strong>Defense</strong>
-                    <span class="badge">{{pkmCtrl.pokemon.stats.defense}}</span>
-                  </li>
-                  <li class="list-group-item">
-                    <strong>Special Attack</strong>
-                    <span class="badge">{{pkmCtrl.pokemon.stats['sp.atk']}}</span>
-                  </li>
-                  <li class="list-group-item">
-                    <strong>Special Defense</strong>
-                    <span class="badge">{{pkmCtrl.pokemon.stats['sp.def']}}</span>
-                  </li>
-                  <li class="list-group-item">
-                    <strong>Speed</strong>
-                    <span class="badge">{{pkmCtrl.pokemon.stats.speed}}</span>
-                  </li>
-                  <li class="list-group-item">
-                    <strong>Total</strong>
-                    <span class="badge">{{pkmCtrl.pokemon.stats.total}}</span>
-                  </li>
-                </ul>
+                 <strong>Movilidad</strong> 
               </div>
               <!-- Seguridad -->
               <div ng-show="tabs.tab === 3">
@@ -133,8 +80,10 @@
               </div>
               <!-- Turismo -->
               <div ng-show="tabs.tab === 5">
-                
-             	   <strong>Turismo</strong>       
+             	   <strong>Riesgo</strong>       
+              </div>
+              <div ng-show="tabs.tab === 6">
+                 <strong>Inclusión</strong>       
               </div>
 
             </div>

@@ -59,7 +59,7 @@
 		<section class="container-fluid">
 			<div class="row">
 				
-			<div id="carousel-example-generic" class="carousel slide col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2" data-ride="carousel">
+			<div id="carousel-example-generic" class="carousel slide col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1" data-ride="carousel">
 			  <ol class="carousel-indicators">
 			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -174,27 +174,19 @@
 			</div>
 		</section>
 		
-		<section>
+		<section class="container">
 			<div id="fb-root"></div>
-			<script type="text/javascript">
-			(function() {
-			var element = document.createElement('script'); 
-			element.type = "text/javascript"; 
-			element.async = true;
-			element.id = "facebook-jssdk"
-			element.src = "https://www.facebook.com/supersnatly?ref=hl";
-			var s = document.getElementsByTagName('script')[0]; 
-			s.parentNode.insertBefore(element, s);
-			})();
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.3&appId=1641424632759595";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
 			</script>
-
-			<div class="fb-like" data-href="https://www.facebook.com/supersnatly?ref=hl" data-width="292">
-			</div>
-
-			<div class="fb-like" data-href="https://www.facebook.com/supersnatly?ref=hll" data-width="292" data-send="true"></div>
+	
+			<div class="fb-like" data-href="https://www.facebook.com/supersnatly" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 		</section>
-
-		<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
 		
 	    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
