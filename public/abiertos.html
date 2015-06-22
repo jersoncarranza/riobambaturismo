@@ -61,14 +61,38 @@
               <li ng-class="{ active:tabs.tab === 6 }"><a href="#" ng-click="tabs.selectTab(6)"><img src="./images/infantiles.png" width="18" height="18" alt="">Infantiles</a></li>
             </ul>
             <div class="tab-content">
-              <!-- Pokedex -->
-              <div ng-show="tabs.tab === 1">
-                 <div>
-                    <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
-
-                    <div class='tableauPlaceholder' style='width: 904px; height: 795px;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;iO&#47;iON&#47;AnlisisRiobambaSalud&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='904' height='795' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='iON&#47;AnlisisRiobambaSalud' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;iO&#47;iON&#47;AnlisisRiobambaSalud&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
-                 </div>
-              </div>
+                <!-- salud -->
+                  <br>
+                  <div ng-show="tabs.tab === 1">
+                    <div class="col-lg-9 col-lg-offset-2" >
+                          
+                          <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
+                          <div class='col-md-12 tableauPlaceholder'>
+                            <noscript>
+                            <a href='#'>
+                              <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;iO&#47;iON&#47;AnlisisRiobambaSalud&#47;1_rss.png' style='border: none' />
+                            </a>
+                            </noscript>
+                            <object class='tableauViz' width='100%' height="890px" style='display:none;'>
+                              <param class="" name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                              <param class="" name='site_root' value='' />
+                              <param class="" name='name' value='iON&#47;AnlisisRiobambaSalud' />
+                           
+                              <param name='tabs' value='yes' />
+                           <param name='toolbar' value='yes' />
+                           <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;iO&#47;iON&#47;AnlisisRiobambaSalud&#47;1.png' /> 
+                           <param name='animate_transition' value='yes' />
+                           <param name='display_static_image' value='yes' />
+                           <param name='display_spinner' value='yes' />
+                           <param name='display_overlay' value='yes' />
+                           <param name='display_count' value='yes' />
+                           <param name='showVizHome' value='no' />
+                           <param name='showTabs' value='y' />
+                           <param name='bootstrapWhenNotified' value='true' /> 
+                            </object>
+                          </div>
+                  </div> 
+            </div>
               <!-- Stats -->
               <div ng-show="tabs.tab === 2">
                  <strong>Educación</strong> 

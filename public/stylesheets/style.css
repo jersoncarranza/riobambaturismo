@@ -1,4 +1,6 @@
-
+.dijitTabChecked{
+	display: none;
+}
 
 #particles-js{
 	width: 100%;
