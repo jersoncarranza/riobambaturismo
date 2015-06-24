@@ -3,8 +3,7 @@
 <head>
 	<meta charset="utf-8">
     <link rel="shortcut icon" href="./images/favicon.ico" />
-    <link rel="stylesheet" href="./stylesheets/boostrap.min.css">
-    <link rel="stylesheet" href="https://bootswatch.com/cerulean/bootstrap.min.css">
+    <link rel="stylesheet" href="./stylesheets/bootstrap.min.css">
     <link rel="stylesheet" href="./stylesheets/hover-min.css"/>
     <link rel="stylesheet" href="./stylesheets/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">  
@@ -57,7 +56,7 @@
               <li ng-class="{ active:tabs.tab === 2 }"><a href="#" ng-click="tabs.selectTab(2)"><img src="./images/educacion.png" width="18" height="18" alt="">Educación</a></li>
               <li ng-class="{ active:tabs.tab === 3 }"><a href="#" ng-click="tabs.selectTab(3)"><img src="./images/recreacion.png" width="18" height="18" alt=""> Recreación</a></li>
               <li ng-class="{ active:tabs.tab === 4 }"><a href="#" ng-click="tabs.selectTab(4)"><img src="./images/seguridad.png" width="18" height="18" alt=""> Seguridad</a></li>
-              <li ng-class="{ active:tabs.tab === 5 }"><a href="#" ng-click="tabs.selectTab(5)"><img src="./images/turismo.png" width="18" height="18" alt=""> Turismo</a></li>
+              <li ng-class="{ active:tabs.tab === 5 }"><a href="#" ng-click="tabs.selectTab(5)"><img src="./images/turismo2.png" width="18" height="18" alt=""> Turismo</a></li>
               <li ng-class="{ active:tabs.tab === 6 }"><a href="#" ng-click="tabs.selectTab(6)"><img src="./images/infantiles.png" width="18" height="18" alt="">Infantiles</a></li>
             </ul>
             <div class="tab-content">
@@ -92,6 +91,8 @@
                             </object>
                           </div>
                   </div> 
+
+                  <!-- <figure><img src="./images/bisalud.jpg" alt="salud" class="img-responsive"></figure> -->
             </div>
               <!-- Stats -->
               <div ng-show="tabs.tab === 2">
@@ -106,9 +107,10 @@
                       </noscript>
                       <object class='tableauViz' width="100%" height="890px" style='display:none;'>
                       <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                      <param name='site_root' value='' /><param name='name' value='iON&#47;AnlisisRiobambaEducacin' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;iO&#47;iON&#47;AnlisisRiobambaEducacin&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
-                    
+                      <param name='site_root' value='' /><param name='name' value='iON&#47;AnlisisRiobambaEducacin' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;iO&#47;iON&#47;AnlisisRiobambaEducacin&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>    
                   </div>
+              
+                  
               </div>
               <!-- Seguridad -->
               <div ng-show="tabs.tab === 3">
@@ -140,12 +142,10 @@
           <!-- /tabs -->
 	</section>
 
-	<script src="https://code.angularjs.org/1.3.14/angular.min.js"></script>
- 	<script src="https://code.angularjs.org/1.3.14/angular-route.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
-
-    <script src="./javascripts/app.js"></script>
+	<script src="./javascripts/angular.min.js"></script>
+ 	<script src="./javascripts/angular-route.min.js"></script>
+  <script type="text/javascript" src="./javascripts/jquery-2.1.1.min.js"></script>
+	<script src="./javascripts/bootstrap.min.js"></script>
+  <script src="./javascripts/app.js"></script>
 </body>
 </html>
